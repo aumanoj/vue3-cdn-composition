@@ -1,5 +1,5 @@
 # vue3-cdn-composition
-Process to execute the project -
+The process to execute the project -
 1. Extract the zip file.
 2. Open the index.html file on the browser.
 
@@ -10,4 +10,4 @@ Process to execute the project -
 
 
 Email - aumanojyadav@gmail.com
-Github link - GitHub link - https://github.com/aumanoj
+Github link - GitHub link - https://github.com/aumanoj/vue3-cdn-composition
