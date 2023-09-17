@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vue3-cdn-composition</title>
+  <!-- Include Vue 3 and the Composition API via CDN -->
+  <script src="https://unpkg.com/vue@3.2.12/dist/vue.global.prod.js"></script>
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <div id="app">
+    <h1>App Component</h1>
+    <!-- Count sample -->
+    <div class="counter">
+      <p class="count">Count: {{ count }}</p>
+      <button class="increment-button" @click="count++">Increment Count</button>
+    </div>
+    <!-- Parent component -->
+    <greeting-parent :message="greetingMessage"></greeting-parent>
+  </div>
+  <!-- Include GreetingParent and GreetingChild components -->
+  <script  src="./components/GreetingParent.js"></script>
+  <script  src="./components/GreetingChild.js"></script>
+  <script  src="./components/GreetingGrandChild.js"></script>
+  <script>
+    const app = Vue.createApp({
+      setup() {
+        const count = Vue.ref(0);
+        const greetingMessage = 'Greeting from App';
+        return {
+          count,
+          greetingMessage,
+        };
+      },
+    });
+    
+    /* Register component here */
+    app.component('greeting-parent', GreetingParent);
+    app.component('greeting-child', GreetingChild);
+    app.component('greeting-grand-child', GreetingGrandChild);
+
+    app.mount('#app');
+  </script>
+</body>
+</html>

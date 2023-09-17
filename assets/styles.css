@@ -1,0 +1,22 @@
+html, body {
+    height: 70%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counter{
+  padding-left: 30px;
+}
+.count {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.increment-button {
+  padding: 10px 20px;
+  background-color: #f5f4f4; 
+  color: #000; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
