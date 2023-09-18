@@ -1,12 +1,13 @@
 /* Inside parent component calling child component with props */
-const GreetingParent = {
+export default {
+// const GreetingParent = {
   props: {
     message: String,
   },
   template: `
-    <div>
-      <h1>{{ message }}</h1>
+    <div class="pl-2">
       <p>Parent Component</p>
+      <h1>{{ message }}</h1>
       <greeting-child :greeting="parentMessage"></greeting-child>
     </div>
   `,
@@ -16,5 +17,6 @@ const GreetingParent = {
   },
 };
 
+// export default GreetingParent
 
   

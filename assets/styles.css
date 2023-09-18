@@ -1,12 +1,17 @@
 html, body {
-    height: 70%;
     margin: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    font-size: 18px;
 }
 .counter{
   padding-left: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.pl-2 {
+  padding: 20px;
+  border: 1px solid #e3e3e3;
 }
 .count {
   font-size: 20px;
@@ -19,4 +24,8 @@ html, body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 600;
 }

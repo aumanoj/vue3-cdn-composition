@@ -10,37 +10,22 @@
 </head>
 <body>
   <div id="app">
-    <h1>App Component</h1>
     <!-- Count sample -->
     <div class="counter">
+      <h1>App Component</h1>
       <p class="count">Count: {{ count }}</p>
       <button class="increment-button" @click="count++">Increment Count</button>
     </div>
     <!-- Parent component -->
     <greeting-parent :message="greetingMessage"></greeting-parent>
   </div>
+  <script type="module" src="./app.js"></script>
   <!-- Include GreetingParent and GreetingChild components -->
-  <script  src="./components/GreetingParent.js"></script>
-  <script  src="./components/GreetingChild.js"></script>
-  <script  src="./components/GreetingGrandChild.js"></script>
+  <script type="module" src="./components/GreetingParent.js"></script>
+  <script type="module" src="./components/GreetingChild.js"></script>
+  <script type="module" src="./components/GreetingGrandChild.js"></script>
   <script>
-    const app = Vue.createApp({
-      setup() {
-        const count = Vue.ref(0);
-        const greetingMessage = 'Greeting from App';
-        return {
-          count,
-          greetingMessage,
-        };
-      },
-    });
-    
-    /* Register component here */
-    app.component('greeting-parent', GreetingParent);
-    app.component('greeting-child', GreetingChild);
-    app.component('greeting-grand-child', GreetingGrandChild);
-
-    app.mount('#app');
+  
   </script>
 </body>
 </html>
