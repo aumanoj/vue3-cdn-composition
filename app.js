@@ -1,15 +1,16 @@
-
-
+/* Include components here */
 import GreetingParent from './components/GreetingParent.js';
 import GreetingChild from './components/GreetingChild.js';
 import GreetingGrandChild from './components/GreetingGrandChild.js';
+/* Init app */
 const app = Vue.createApp({
     setup() {
       const count = Vue.ref(0);
       const greetingMessage = 'Greeting from parrent app component';
+      const parentMessage = Vue.provide('parentMessage', greetingMessage);
       return {
         count,
-        greetingMessage,
+        parentMessage
       };
     },
   });
