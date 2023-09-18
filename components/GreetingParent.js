@@ -1,6 +1,5 @@
 /* Inside parent component calling child component with props */
-export default {
-// const GreetingParent = {
+const GreetingParent = {
   props: {
     message: String,
   },
@@ -11,12 +10,12 @@ export default {
       <greeting-child :greeting="parentMessage"></greeting-child>
     </div>
   `,
-  setup() {
-    const parentMessage = Vue.provide('parentMessage', 'Greeting from GreetingParent');
+  setup(props) {
+    const parentMessage = Vue.provide('parentMessage', props.message);
     return { parentMessage };
   },
 };
 
-// export default GreetingParent
+export default GreetingParent
 
   
