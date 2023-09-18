@@ -10,22 +10,11 @@
 </head>
 <body>
   <div id="app">
-    <!-- Count sample -->
-    <div class="counter">
-      <h1>App Component</h1>
-      <p class="count">Count: {{ count }}</p>
-      <button class="increment-button" @click="count++">Increment Count</button>
-    </div>
+    <!-- Counter sample -->
+    <counter></counter>
     <!-- Parent component -->
     <greeting-parent :message="greetingMessage"></greeting-parent>
   </div>
   <script type="module" src="./app.js"></script>
-  <!-- Include GreetingParent and GreetingChild components -->
-  <script type="module" src="./components/GreetingParent.js"></script>
-  <script type="module" src="./components/GreetingChild.js"></script>
-  <script type="module" src="./components/GreetingGrandChild.js"></script>
-  <script>
-  
-  </script>
 </body>
 </html>
