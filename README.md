@@ -15,6 +15,9 @@ Before using Vite, you need to have Node.js installed on your computer. You can 
 
 
 
+## For more details to setup the project follow the [link]
+(https://docs.google.com/document/d/1gVmPjutgowvAeOq5thPpMfZXnl03gDmH8-50MYXiiys/edit?usp=sharing)
+
 
 
 Email - aumanojyadav@gmail.com

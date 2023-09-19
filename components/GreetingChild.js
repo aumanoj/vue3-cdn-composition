@@ -8,8 +8,8 @@ const GreetingChild = {
     </div>
   `,
   setup() {
-    const parentMessage = Vue.inject('parentMessage');
-    return { parentMessage };
-  },
-};
+    const parentMessage = Vue.inject('parentMessage')
+    return { parentMessage }
+  }
+}
 export default GreetingChild

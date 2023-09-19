@@ -6,7 +6,7 @@ import GreetingGrandChild from './components/GreetingGrandChild.js';
 /* Init app */
 const app = Vue.createApp({
     setup() {
-      const greetingMessage = 'Greeting from parrent app component';
+      const greetingMessage = Vue.ref('Greeting from parrent app component');
       Vue.provide('parentMessage', greetingMessage);;
     },
   });
